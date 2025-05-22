@@ -92,8 +92,8 @@ footer {
 }
 
 .main-image img {
-  max-width: 800px;
-  max-height: 500px;
+  max-width: 1000;
+  max-height: 700px;
   object-fit: contain;
   border-radius: 5px;
 }
