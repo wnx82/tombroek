@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spacieuse maison 6 chambres</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Spacieuse maison 6 chambres avec jardin et garage</h1>
-      <p class="location">📍 Rollegem / Mouscron</p>
-      <p class="status">À VENDRE</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spacieuse maison 6 chambres</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    #languageToggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 12px;
+      cursor: pointer;
+      background-color: #ccc;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button id="languageToggle">NL</button>
+    <h1 id="title">Spacieuse maison 6 chambres avec jardin et garage</h1>
+    <p class="location" id="location">📍 Rollegem / Mouscron</p>
+    <p class="status" id="status">À VENDRE</p>
+  </header>
 
     <div class="gallery-container">
       <div class="main-image">
@@ -44,54 +58,139 @@
       </div>
     </div>
 
-    <section class="price">
-      <h2>Prix : 395 000 €</h2>
-    </section>
+  <section class="price">
+    <h2 id="price">Prix : 395 000 €</h2>
+  </section>
 
-    <section class="description">
-      <h3>📝 Description</h3>
-      <p>
-        Cette maison spacieuse située à la frontière de Rollegem / Mouscron proche de toutes commodités et à proximité du centre Commercial des Dauphins offre un cadre de vie idéal pour une grande famille 
+  <section class="description">
+    <h3 id="descTitle">📝 Description</h3>
+    <p id="descText">
+      Cette maison spacieuse située à la frontière de Rollegem / Mouscron proche de toutes commodités et à proximité du centre Commercial des Dauphins offre un cadre de vie idéal pour une grande famille 
+      <br /><br />
+      <strong>Rez-de-chaussée :</strong> hall d’entrée, bureau, WC séparé, séjour lumineux de 54 m², cuisine équipée attenante, buanderie, garage 1 voiture. <br />
+      <strong>1er étage :</strong> 3 chambres, salle de bain, WC séparé, dressing. <br />
+      <strong>2ème étage :</strong> 3 chambres supplémentaires, un séjour de 23 m² et possibilité de salle de bain. <br />
+      <strong>Grenier aménageable :</strong> +/- 70 m².
+    </p>
+  </section>
+
+  <section class="details">
+    <h3 id="detailsTitle">📌 Détails techniques</h3>
+    <ul id="detailsList">
+      <li>📐 Superficie habitable : + de 260 m²</li>
+      <li>🌳 Jardin : 220 m² grand châlet + serre</li>
+      <li>🏡 Terrain total : 333 m²</li>
+      <li>🛏️ 6 chambres spacieuses</li>
+      <li>🛁 1 salle de bain (+ possibilité d’une 2ᵉ au 2ᵉ étage)</li>
+      <li>🚗 Garage pour 1 voiture + 2 emplacements en façade</li>
+      <li>🔥 Chauffage central au gaz</li>
+      <li>⚡ Électricité : conforme</li>
+      <li>📊 PEB : A+ panneaux solaires & batterie & citerne d'eau de pluie & adoucisseur</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h3 id="contactTitle">📩 Contact</h3>
+    <p id="contactText">
+      Pour toute demande d’information ou organiser une visite, n’hésitez pas à envoyer un email à :
+      <a href="mailto:vandermeulen.christophe@gmail.com">vandermeulen.christophe@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p id="rc">RC : 1075 € | Certificat PEB disponible</p>
+    <p id="updated">📅 Dernière mise à jour : 22/05/2025</p>
+  </footer>
+
+  <script>
+    function showImage(img) {
+      document.getElementById("main").src = img.src;
+    }
+
+    const translations = {
+      fr: {
+        title: "Spacieuse maison 6 chambres avec jardin et garage",
+        location: "📍 Rollegem / Mouscron",
+        status: "À VENDRE",
+        price: "Prix : 395 000 €",
+        descTitle: "📝 Description",
+        descText: `Cette maison spacieuse située à la frontière de Rollegem / Mouscron proche de toutes commodités et à proximité du centre Commercial des Dauphins offre un cadre de vie idéal pour une grande famille 
         <br /><br />
         <strong>Rez-de-chaussée :</strong> hall d’entrée, bureau, WC séparé, séjour lumineux de 54 m², cuisine équipée attenante, buanderie, garage 1 voiture. <br />
         <strong>1er étage :</strong> 3 chambres, salle de bain, WC séparé, dressing. <br />
         <strong>2ème étage :</strong> 3 chambres supplémentaires, un séjour de 23 m² et possibilité de salle de bain. <br />
-        <strong>Grenier aménageable :</strong> +/- 70 m².
-      </p>
-    </section>
-
-    <section class="details">
-      <h3>📌 Détails techniques</h3>
-      <ul>
-        <li>📐 Superficie habitable : + de 260 m²</li>
-        <li>🌳 Jardin : 220 m² grand châlet + serre</li>
-        <li>🏡 Terrain total : 333 m²</li>
-        <li>🛏️ 6 chambres spacieuses</li>
-        <li>🛁 1 salle de bain (+ possibilité d’une 2ᵉ au 2ᵉ étage)</li>
-        <li>🚗 Garage pour 1 voiture + 2 emplacements en façade</li>
-        <li>🔥 Chauffage central au gaz</li>
-        <li>⚡ Électricité : conforme</li>
-        <li>📊 PEB : A+ panneaux solaires & batterie & citerne d'eau de pluie & adoucisseur</li>
-      </ul>
-    </section>
-
-    <section class="contact">
-      <h3>📩 Contact</h3>
-      <p>
-        Pour toute demande d’information ou organiser une visite, n’hésitez pas à envoyer un email à :
-        <a href="mailto:vandermeulen.christophe@gmail.com">vandermeulen.christophe@gmail.com</a>
-      </p>
-    </section>
-
-    <footer>
-      <p>RC : 1075 € | Certificat PEB disponible</p>
-      <p>📅 Dernière mise à jour : 22/05/2025</p>
-    </footer>
-
-    <script>
-      function showImage(img) {
-        document.getElementById("main").src = img.src;
+        <strong>Grenier aménageable :</strong> +/- 70 m².`,
+        detailsTitle: "📌 Détails techniques",
+        detailsList: `
+          <li>📐 Superficie habitable : + de 260 m²</li>
+          <li>🌳 Jardin : 220 m² grand châlet + serre</li>
+          <li>🏡 Terrain total : 333 m²</li>
+          <li>🛏️ 6 chambres spacieuses</li>
+          <li>🛁 1 salle de bain (+ possibilité d’une 2ᵉ au 2ᵉ étage)</li>
+          <li>🚗 Garage pour 1 voiture + 2 emplacements en façade</li>
+          <li>🔥 Chauffage central au gaz</li>
+          <li>⚡ Électricité : conforme</li>
+          <li>📊 PEB : A+ panneaux solaires & batterie & citerne d'eau de pluie & adoucisseur</li>
+        `,
+        contactTitle: "📩 Contact",
+        contactText: `Pour toute demande d’information ou organiser une visite, n’hésitez pas à envoyer un email à :
+        <a href="mailto:vandermeulen.christophe@gmail.com">vandermeulen.christophe@gmail.com</a>`,
+        rc: "RC : 1075 € | Certificat PEB disponible",
+        updated: "📅 Dernière mise à jour : 22/05/2025",
+        toggleLabel: "NL"
+      },
+      nl: {
+        title: "Ruime woning met 6 slaapkamers, tuin en garage",
+        location: "📍 Rollegem / Moeskroen",
+        status: "TE KOOP",
+        price: "Prijs: € 395.000",
+        descTitle: "📝 Beschrijving",
+        descText: `Deze ruime woning, gelegen op de grens van Rollegem en Moeskroen, dichtbij alle voorzieningen en het winkelcentrum 'Les Dauphins', is ideaal voor een groot gezin.
+        <br /><br />
+        <strong>Gelijkvloers:</strong> inkomhal, bureau, apart toilet, lichte woonkamer van 54 m², aangrenzende uitgeruste keuken, wasruimte, garage voor 1 wagen. <br />
+        <strong>1e verdieping:</strong> 3 slaapkamers, badkamer, apart toilet, dressing. <br />
+        <strong>2e verdieping:</strong> 3 extra slaapkamers, een woonkamer van 23 m² en mogelijkheid voor een extra badkamer. <br />
+        <strong>Inrichtbare zolder:</strong> +/- 70 m².`,
+        detailsTitle: "📌 Technische details",
+        detailsList: `
+          <li>📐 Bewoonbare oppervlakte: meer dan 260 m²</li>
+          <li>🌳 Tuin: 220 m² met groot tuinhuis + serre</li>
+          <li>🏡 Totale oppervlakte: 333 m²</li>
+          <li>🛏️ 6 ruime slaapkamers</li>
+          <li>🛁 1 badkamer (+ mogelijkheid voor een 2e op de 2e verdieping)</li>
+          <li>🚗 Garage voor 1 wagen + 2 parkeerplaatsen vooraan</li>
+          <li>🔥 Centrale verwarming op gas</li>
+          <li>⚡ Elektriciteit: conform</li>
+          <li>📊 EPC: A+ zonnepanelen, batterij, regenwaterput, waterverzachter</li>
+        `,
+        contactTitle: "📩 Contact",
+        contactText: `Voor meer informatie of om een bezoek te regelen, stuur gerust een e-mail naar:
+        <a href="mailto:vandermeulen.christophe@gmail.com">vandermeulen.christophe@gmail.com</a>`,
+        rc: "KI: € 1075 | EPC certificaat beschikbaar",
+        updated: "📅 Laatste update: 22/05/2025",
+        toggleLabel: "FR"
       }
-    </script>
-  </body>
+    };
+
+    let currentLang = "fr";
+    document.getElementById("languageToggle").addEventListener("click", () => {
+      currentLang = currentLang === "fr" ? "nl" : "fr";
+      const t = translations[currentLang];
+
+      document.getElementById("title").innerHTML = t.title;
+      document.getElementById("location").innerHTML = t.location;
+      document.getElementById("status").innerHTML = t.status;
+      document.getElementById("price").innerHTML = t.price;
+      document.getElementById("descTitle").innerHTML = t.descTitle;
+      document.getElementById("descText").innerHTML = t.descText;
+      document.getElementById("detailsTitle").innerHTML = t.detailsTitle;
+      document.getElementById("detailsList").innerHTML = t.detailsList;
+      document.getElementById("contactTitle").innerHTML = t.contactTitle;
+      document.getElementById("contactText").innerHTML = t.contactText;
+      document.getElementById("rc").innerHTML = t.rc;
+      document.getElementById("updated").innerHTML = t.updated;
+      document.getElementById("languageToggle").innerText = t.toggleLabel;
+    });
+  </script>
+</body>
 </html>
