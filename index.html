@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Générateur Euromillions & Lotto</title>
+    <title>Spacieuse maison 6 chambres</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-</head>
+  </head>
+  <body>
+    <header>
+      <h1>Spacieuse maison 6 chambres avec jardin et garage</h1>
+      <p class="location">📍 Rollegem / Mouscron</p>
+      <p class="status">À VENDRE</p>
+    </header>
 
-<body>
-    <div class="container">
-        <h1>Générateur
-            <bR><span>Euromillions & Lotto</span>
-        </h1>
-        <div class="date"></div>
-
-        <div class="bloc">
-            <div class="blocTop">
-                <img src="ressources/euromillions-logo-primary-vertical.svg" alt="logo Euromillions"
-                    class="LottoImage" />
-                <p class="numerosEur"></p>
-                <p class="numerosEurCompl"></p>
-
-            </div>
-            <div class="blocMiddle">
-                <button id="button-42">Générer</button>
-            </div>
-
-
-            <div class="loader">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-
-
-            <div class="blocBottom">
-                <img src="ressources/lotto-logo-primary.svg" alt="logo Lotto" class="LottoImage" />
-                <p class="numerosLotto"></p>
-
-            </div>
-
-        </div>
-
-
-
-
-        <div class="footer">
-            Spéciale dédicace à mon père Ghislain Vandermeulen né le 12/10/1954 et décédé le 16/02/2014 <br> Et à ma
-            mère Anita Van Buren née le 02/07/1953 et décédée le 04/12/2021
-
-        </div>
-
+    <div class="gallery-container">
+      <div class="main-image">
+        <img id="main" src="images/1747921281587.jpg" alt="Image principale de la maison" />
+      </div>
+      <div class="thumbnails">
+        <!-- Tes images miniatures -->
+        <img src="images/1747921281602.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281884.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281870.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281857.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281845.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281805.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281833.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281818.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281587.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281742.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281711.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281726.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281755.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281767.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281780.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281632.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281648.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281664.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281680.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281696.jpg" onclick="showImage(this)" />
+        <img src="images/1747921281617.jpg" onclick="showImage(this)" />
+      </div>
     </div>
 
+    <section class="price">
+      <h2>Prix : 395 000 €</h2>
+    </section>
 
+    <section class="description">
+      <h3>📝 Description</h3>
+      <p>
+        Cette maison spacieuse située à la frontière de Rollegem / Mouscron proche de toutes commodités et à proximité du centre Commercial des Dauphins offre un cadre de vie idéal pour une grande famille 
+        <br /><br />
+        <strong>Rez-de-chaussée :</strong> hall d’entrée, bureau, WC séparé, séjour lumineux de 54 m², cuisine équipée attenante, buanderie, garage 1 voiture. <br />
+        <strong>1er étage :</strong> 3 chambres, salle de bain, WC séparé, dressing. <br />
+        <strong>2ème étage :</strong> 3 chambres supplémentaires, un séjour de 23 m² et possibilité de salle de bain. <br />
+        <strong>Grenier aménageable :</strong> +/- 50 m².
+      </p>
+    </section>
 
+    <section class="details">
+      <h3>📌 Détails techniques</h3>
+      <ul>
+        <li>📐 Superficie habitable : + de 260 m²</li>
+        <li>🌳 Jardin : 220 m²</li>
+        <li>🏡 Terrain total : 333 m²</li>
+        <li>🛏️ 6 chambres spacieuses</li>
+        <li>🛁 1 salle de bain (+ possibilité d’une 2ᵉ au 2ᵉ étage)</li>
+        <li>🚗 Garage pour 1 voiture + 2 emplacements en façade</li>
+        <li>🔥 Chauffage central au gaz</li>
+        <li>⚡ Électricité : conforme</li>
+        <li>📊 PEB : A+ panneaux solaires & batterie</li>
+      </ul>
+    </section>
 
-    <script src="main.js"></script>
-</body>
+    <section class="contact">
+      <h3>📩 Contact</h3>
+      <p>
+        Pour toute demande d’information ou organiser une visite, n’hésitez pas à envoyer un email à :
+        <a href="mailto:vandermeulen.christophe@gmail.com">vandermeulen.christophe@gmail.com</a>
+      </p>
+    </section>
 
+    <footer>
+      <p>RC : 1075 € | Certificat PEB disponible</p>
+      <p>📅 Dernière mise à jour : 22/05/2025</p>
+    </footer>
+
+    <script>
+      function showImage(img) {
+        document.getElementById("main").src = img.src;
+      }
+    </script>
+  </body>
 </html>
