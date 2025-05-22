@@ -102,7 +102,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-height: 500px;
+  max-height: 700px;
   overflow-y: auto;
 }
 
